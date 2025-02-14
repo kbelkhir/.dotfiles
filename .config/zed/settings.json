@@ -40,7 +40,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Rosé Pine"
+    "dark": "Tokyo Night"
   },
   "file_scan_exclusions": [
     "__pycache__",
@@ -51,35 +51,35 @@
     ".pytest_cache"
   ],
   "experimental.theme_overrides": {
-    "editor.background": "#000000",
+    // "editor.background": "#000000",
     //#FFAFAF
-    "panel.background": "#191724",
+    // "panel.background": "#191724",
     //
     // "editor.foreground": "#73ade9ff",
-    "editor.gutter.background": "#000000",
-    "terminal.background": "#000000",
-    "syntax": {
-      "keyword": {
-        "color": "#5C8382f",
-        "font_style": null,
-        "font_weight": null
-      },
-      "comment": {
-        "font_style": "italic"
-      },
-      "comment.doc": {
-        "font_style": "italic"
-      },
-      "function": {
-        "color": "#FFAFAF"
-        // "color": "#73ade9ff",
-      }
-      // "constructor": {
-      //   "color": "#73ade9ff",
-      //   "font_style": null,
-      //   "font_weight": null
-      // }
-    }
+    // "editor.gutter.background": "#000000",
+    // "terminal.background": "#000000"
+    // "syntax": {
+    //   "keyword": {
+    //     "color": "#5C8382f",
+    //     "font_style": null,
+    //     "font_weight": null
+    //   },
+    //   "comment": {
+    //     "font_style": "italic"
+    //   },
+    //   "comment.doc": {
+    //     "font_style": "italic"
+    //   },
+    //   "function": {
+    //     "color": "#FFAFAF"
+    //     // "color": "#73ade9ff",
+    //   }
+    // "constructor": {
+    //   "color": "#73ade9ff",
+    //   "font_style": null,
+    //   "font_weight": null
+    // }
+    // }
     // this is a comment
   },
   "lsp": {
@@ -109,7 +109,7 @@
   "languages": {
     "Python": {
       "format_on_save": "on",
-      "language_servers": ["ruff", "pyright"],
+      "language_servers": ["pyright", "ruff"],
       "formatter": [
         {
           "code_actions": {

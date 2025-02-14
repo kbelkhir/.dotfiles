@@ -10,3 +10,4 @@ export EDITOR='nvim'
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
