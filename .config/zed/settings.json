@@ -7,40 +7,84 @@
 // custom settings, run zed: open default settings from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "assistant": {
+  "icon_theme": "Catppuccin Frappé",
+  "agent": {
+    "default_profile": "ask",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "left"
   },
+  "active_pane_modifiers": {
+    // Inset border size of the active pane, in pixels.
+    "border_size": 2,
+    // Opacity of the inactive panes. 0 means transparent, 1 means opaque.
+    // Values are clamped to the [0.0, 1.0] range.
+    "inactive_opacity": 0.6
+  },
+  "toolbar": {
+    // Whether to show breadcrumbs.
+    "breadcrumbs": false,
+    // Whether to show quick action buttons.
+    "quick_actions": false,
+    // Whether to show the Selections menu in the editor toolbar.
+    "selections_menu": true,
+    // Whether to show agent review buttons in the editor toolbar.
+    "agent_review": true,
+    // Whether to show code action buttons in the editor toolbar.
+    "code_actions": false
+  },
+  "title_bar": {
+    // Whether to show the branch icon beside branch switcher in the titlebar.
+    "show_branch_icon": false,
+    // Whether to show the branch name button in the titlebar.
+    "show_branch_name": true,
+    // Whether to show the project host and name in the titlebar.
+    "show_project_items": true,
+    // Whether to show onboarding banners in the titlebar.
+    "show_onboarding_banner": true,
+    // Whether to show user picture in the titlebar.
+    "show_user_picture": false,
+    // Whether to show the sign in button in the titlebar.
+    "show_sign_in": true
+  },
+  "bottom_dock_layout": "contained",
   "telemetry": {
     "metrics": false,
     "diagnostics": false
   },
   "vim_mode": true,
   "base_keymap": "VSCode",
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "ui_font_size": 18,
+  "buffer_font_size": 16,
+  "agent_font_size": 20,
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
-  "ui_font_family": "Monaspace Neon",
+  "ui_font_family": "JetBrainsMono Nerd Font Mono",
   "relative_line_numbers": true,
   "cursor_blink": false,
   "scrollbar": {
     "show": "never"
   },
+  "centered_layout": {
+    "left_padding": 0.3,
+    "right_padding": 0.3
+  },
   "buffer_line_height": "comfortable",
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font Mono",
-    "font_size": 15
+    "font_size": 16,
+    "default_width": 800,
+    "line_height": "standard",
+    "dock": "right"
   },
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Tokyo Night"
+    "dark": "Broken Pine Darker Theme"
   },
   "file_scan_exclusions": [
     "__pycache__",
@@ -48,40 +92,17 @@
     "venv",
     ".vscode",
     ".ruff_cache",
-    ".pytest_cache"
+    ".pytest_cache",
+    "node_modules",
+    "dist",
+    "build",
+    ".DS_Store",
+    ".tanstack",
+    ".vite",
+    ".claude",
+    "supabase/.branches",
+    "supabase/.temp"
   ],
-  "experimental.theme_overrides": {
-    // "editor.background": "#000000",
-    //#FFAFAF
-    // "panel.background": "#191724",
-    //
-    // "editor.foreground": "#73ade9ff",
-    // "editor.gutter.background": "#000000",
-    // "terminal.background": "#000000"
-    // "syntax": {
-    //   "keyword": {
-    //     "color": "#5C8382f",
-    //     "font_style": null,
-    //     "font_weight": null
-    //   },
-    //   "comment": {
-    //     "font_style": "italic"
-    //   },
-    //   "comment.doc": {
-    //     "font_style": "italic"
-    //   },
-    //   "function": {
-    //     "color": "#FFAFAF"
-    //     // "color": "#73ade9ff",
-    //   }
-    // "constructor": {
-    //   "color": "#73ade9ff",
-    //   "font_style": null,
-    //   "font_weight": null
-    // }
-    // }
-    // this is a comment
-  },
   "lsp": {
     "ruff": {
       "initialization_options": {

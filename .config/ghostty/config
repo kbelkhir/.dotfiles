@@ -1,7 +1,10 @@
 theme = rose-pine
+#theme = catppuccin-mocha
+
 background = 000000
-font-family = JetBrainsMono Nerd Font
-font-size = 16
+font-family = JetBrainsMono Nerd FontPropo
+#font-family = Ubuntu Nerd Font
+font-size = 18
 cursor-style = block
 cursor-style-blink = false
 window-decoration = false

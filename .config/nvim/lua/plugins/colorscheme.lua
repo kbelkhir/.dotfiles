@@ -1,32 +1,61 @@
 return {
-  { "Mofiqul/vscode.nvim" },
+  {
+    "Mofiqul/vscode.nvim",
+    lazy = true,
+    opts = {
+      -- Disable nvim-tree background color
+      transparent = true,
+      disable_nvimtree_bg = true,
+
+      -- Override colors (see ./lua/vscode/colors.lua)
+    },
+  },
+  {
+    "catppuccin/nvim",
+    lazy = true,
+    name = "catppuccin",
+    opts = {
+      -- transparent_background = true,
+      -- custom_highlights = {
+      --   CursorLine = { bg = "#000000" },
+      -- },
+    },
+  },
   {
     "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
+    lazy = true,
+    -- priority = 1000,
+    opts = {
+      transparent = true,
+      styles = {
+        String = { fg = "#CE9178" },
+      },
+    },
   },
   {
     "rose-pine/neovim",
-    variant = "main",
+    priority = 1000,
+    lazy = false,
+    variant = "moon",
     name = "rose-pine",
     opts = {
-      palette = {
-        main = {
-          --base = "#191724",
-          base = "#000000",
-          panel = "#000000",
-        },
+      styles = {
+        bold = true,
+        italic = false,
+        transparency = true,
       },
+      palette = {},
       highlight_groups = {
-        --  String = { fg = "#CE9178" },
+        String = { fg = "#CE9178" },
+        -- CursorLine = { bg = "base" },
+        CursorLine = { bg = "" },
       },
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "rose-pine-moon",
     },
   },
 }
